@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Pagination Example with Logic Like Google</title>
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <style>
+        a { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="freelancer.svg" style="width: 140px;
+        height: 35px;
+        margin-left: 350px;
+        margin-top: 35px;" >
+  
+      <a class="top_header" href>How It Works</a>
+      <a class="top_header1" href>Browse Jobs</a>
+      <a class="top_header3" href>Log In</a>
+      <a class="top_header1" href>Sign Up</a>
+      <div class="border">
+        <a2 class="active" href style="color: white">Find Jobs</a2>
+        <a2 class="active" href style="color: white">Find Freelancers</a2>
+        <a2 class="active" href style="color: white">Get Ideas</a2>
+        <a2 class="active" href style="color: white">Resources</a2>
+      </div>
+    <div id="app"></div>
+    <div class="fotter">
+        <img src="freelancer.svg" style="width: 140px;
+        height: 35px;
+        margin-left: 350px;
+        margin-top: 35px;" >
+        <img src="globe-logo-42DE548AC7-seeklogo.com.png" width="20"  style="display: block;margin-left: 352px;margin-top: 32px;background-color: azure;">
+
+        <a5 href="uss"style="color:white;font-size:14px;font-weight:400;font-family:Roboto,sans-serif;position:relative;left:390px;top:-20px;cursor: pointer;"> US (International) / English</a5>
+        <img src="mark.jpg" width="20"  style="display: block;margin-left: 352px;margin-top: 5px;background-color: azure;border-radius: 50%;">
+        <a6 href="uss"style="color:white;font-size:14px;font-weight:400;font-family:Roboto,sans-serif;position:relative;left:390px;top:-20px;cursor: pointer;"> Help & Support</a6>
+        <div>
+        <h1 style="color: #F7F7F7;font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: -140px;display: flex;margin-left:750px;font-weight: 700;">Freelancer</h1>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 27px;display: block;margin-left:750px;font-weight: 700;line-height: 1.0px;cursor: pointer;">Categories</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 18px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Projects</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Contests</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Freelancers</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Enterprise</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Prefrred Freelancer<br/><br/>Program</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Project Management</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Local Jobs</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Photo Anywhere</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Showcase</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">API for Developers</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 16px;display: block;margin-left:750px;font-weight: 700;line-height: 0.9;cursor: pointer;">Get Verified</a7>
+      </div>
+      <div>
+        <h2 style="color: #F7F7F7;font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: -368px;display: flex;margin-left:950px;font-weight: 700;">About</h2>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 23px;display: block;margin-left:950px;font-weight: 700;line-height: 0.9;cursor: pointer;">About us</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 10px;display: block;margin-left:950px;font-weight: 700;line-height: 1.2;cursor: pointer;">How It Works</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 11px;display: block;margin-left:950px;font-weight: 700;line-height: 1.2;cursor: pointer;">Security</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 11px;display: block;margin-left:950px;font-weight: 700;line-height: 1.2;cursor: pointer;">Investor</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 11px;display: block;margin-left:950px;font-weight: 700;line-height: 1.2;cursor: pointer;">Sitemap</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 11px;display: block;margin-left:950px;font-weight: 700;line-height: 1.2;cursor: pointer;">Quotes</a7>
+        <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 11px;display: block;margin-left:950px;font-weight: 700;line-height: 1.2;cursor: pointer;">News</a7>
+      </div>
+      
+      <div>
+      <h3 style="color: #F7F7F7;font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: -210px;display: flex;margin-left:1170px;font-weight: 700;">Terms</h3>
+      
+      <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 22px;display: block;margin-left:1170px;font-weight: 700;line-height: 1.2;cursor: pointer;">Privacy Policy</a7>
+      <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top:12px;display: block;margin-left:1170px;font-weight: 700;line-height: 1.2;cursor: pointer;">Terms and Conditions</a7>
+      <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 12px;display: block;margin-left:1170px;font-weight: 700;line-height: 1.2;cursor: pointer;">Copyright Policy</a7>
+      <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 12px;display: block;margin-left:1170px;font-weight: 700;line-height: 1.2;cursor: pointer;">Code of Conduct</a7>
+      <a7 style="font-size: 13px;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;margin-top: 12px;display: block;margin-left:1170px;font-weight: 700;line-height: 1.2;cursor: pointer;">Fees and Charges</a7>
+      </div>
+      <div>
+    
+      <h3 style="color: #F7F7F7;font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: -165px;display: flex;margin-left:1380px;font-weight: 700;">Apps</h3>
+      
+      <img src="appstore1.png" width="140" style="position:relative;left:1380px;">
+ 
+      <img src="googleplay.png" width="140" style="position:relative;left:1380px;top: 20px;border-radius: 10px;border-color: white;display: block;">
+    </div>
+    
+    <img class="fa" src="icons8-facebook-f-24.png"width="40">
+    <img class="ta" src="icons8-twitter-100.png"width="40">
+    <img class="ya" src="icons8-play-button-50.png"width="40">
+    <img class="ia" src="icons8-instagram-26.png"width="40">
+
+    <div>
+      <hr style="width:65%;text-align:centre;margin-left:350px;position: relative;text-align:center;display: flex;color:#DEDEDE;margin-top:300px ;">
+    </div>
+    <p class="e1">51,370,287<br/>
+      Registered Users</p>
+      <p class="e2">19,679,865<br/>
+        Total Jobs Posted</p>
+        <p class="e3">Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 141 959 042)<br/>
+          Copyright © 2021 Freelancer Technology Pty Limited (ACN 141 959 042)</p>
+      </div>
+      
+</body>
+</html>
